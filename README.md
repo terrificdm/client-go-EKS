@@ -14,7 +14,7 @@ Regardings this repo, we focus on building "out-of-cluster" connection between c
  1. Image you have multiple profiles of AKSK(for instances profile-a, profile-b), and each AKSK profile which is represented of IAM user/role must have the authority to describe EKS cluster as well as has the authority to access EKS
  2. Run `example2.go` to test the connection for client-go talking to EKS  
 
- >  Note we use "os.Setenv("AWS_PROFILE", aws_profile)" to chose the functional AKSK
+ >  Note we use "os.Setenv("AWS_PROFILE", aws_profile)" to chose the functional AKSK.
  
 **Example3:** In case you don't want to use "os.Setenv("AWS_PROFILE", aws_profile)" to set environment variables, you manually set the profile and pass the "session token" to "aws-iam-authenticator" to get a valid "BearerToken". Steps are similary to above use case.
  
